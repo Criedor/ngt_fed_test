@@ -1,13 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
 body {
+  height: 100vh;
+  font-family: 'Nunito Sans';
+  background-image: url('/img/bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  color: #23d795;
+  font-weight: 300;
+  font-size: 3.5rem;
+  line-height: 1.3;
+  margin: 0;
+}
+
+h2 {
+  color: #23d795;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1.3;
+  margin: 0;
+}
+
+p {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+a:hover {
+  font-weight: 700;
+}
+
+button {
+  border-radius: 50rem;
+  color: #273444;
+  font-weight: 600;
+  width: 120px;
+  height: 40px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: .875rem;
+  }
+
+  button:hover {
+    margin-bottom: 4px;
+    transition: ease-in-out .15s;
+  }
+
+  button:focus {
+    outline:0;
+  }
+
+.container {
+  height: 70vh;
+  min-height: 568px;
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+}
+
+.navi {
+  height: 100px;
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  padding: 0 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+}
+
+.landing {
+  max-width: 600px;
+}
+
+
+@media (max-width: 1200px) {
+  body {
+    background-color: #0a223c;
+    background-image: none;
+  }
 }
