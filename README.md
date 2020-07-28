@@ -1,68 +1,22 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Welcome to my Front-End Developer Test for Next Gate Tech.
 
-## Available Scripts
+## The challenge
+1. In the first part of this test you will need to convert the results to a json structure of your choice, and upload the results to a new Firebase Database (Please use Firebase Realtime Database and NOT Cloud Firestore), and thus new Firebase Project.
 
-In the project directory, you can run:
+2. Next comes the fun part where you will need to consume the data from the Firebase database and display it in a mini front-end dashboard. Use any front-end language or styling
+structure as you please.
 
-### `npm start`
+3. Deploy your work to something like Firebase Hostin
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## The Solution
+1. I converted the csv file to an json file. I used the given long format, since i wasnt sure, if we were supposed to change it. This given, the perfomance of the test app is not that good, although i tried to speed it up by indexing on the date. Also i realized, that the format is very unefficent in regards of network egress. I already used up more then 80% (8.4GB) of the volume for July.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+2. I used react to create a dashboard to display the data. Therefore i created a simple login, using the firebase auth. After successfully login in, the dashbard shows an overview of all funds, the no. of reports and alerts for a specific date. I added a datepicker (dependencies datepicker & moment) to select the date and limited it to the date range of the data. I tried to copy the style of https://nextgatetech.com, by copying the logo, using the same font, color-set, etc. 
 
-### `npm test`
+3. I hosted the code on github and deployed the app to firebase: https://fedtest-c707a.web.app/
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## What i learned
+As i mentioned already the data structure in the long format was hard to handle. I will definitly read up on that topic.
 
-### `npm run build`
+Since I had no experience with firebase, i think after a first impression it looks pretty versaitile: it abstracts away a lot of the back end possibilities (auth, database ~nosql like, storage, hosting, microservices...) into a complete package. It's well documented and easy to use.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
